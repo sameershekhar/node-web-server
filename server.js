@@ -34,7 +34,6 @@ hbs.registerHelper('screamIt',(message)=>{
 app.get('/',function(req,res){
     res.render('home.hbs',{
         pageTitle:'Home page',
-       
         welcomeMessage: 'welcome to home of this awesome websites'
     });
 });
@@ -45,6 +44,12 @@ app.get('/about',function(req,res){
     });
 });
 
+app.get('/project',function(req,res){
+    res.render('project.hbs',{
+         pageTitle:'Project page',
+         welcomeMessage:"welcome to projects page"
+    })
+})
 
 
 
